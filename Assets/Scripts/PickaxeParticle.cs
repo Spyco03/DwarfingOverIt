@@ -27,12 +27,12 @@ public class PickaxeParticle : MonoBehaviour
         if (rot.transform.eulerAngles.z <= 89 || rot.transform.eulerAngles.z >= 271) 
         {
             Instantiate(_object, particle1.transform.position, Quaternion.identity);
-            Debug.Log(rot.transform.eulerAngles.z);
+            
         }
         else if (rot.transform.eulerAngles.z >= 91 && rot.transform.eulerAngles.z <= 269)
         {
             Instantiate(_object, particle2.transform.position, Quaternion.identity);
-            Debug.Log(rot.transform.eulerAngles.z);
+            
         }
 
 

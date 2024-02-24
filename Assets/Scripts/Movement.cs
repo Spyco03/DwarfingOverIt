@@ -7,11 +7,15 @@ public class Movement : MonoBehaviour
     
     private float rollSpeed;
     public float slowUrRoll = 1;
+    public float PickaxeRoll = 3;
     public float moveSpeed;
     private float hMove;
     public GameObject obj;
     public Rigidbody2D rb;
     private bool touchingFloor;
+    public Vector2 boxSize;
+    public float castDist;
+    public LayerMask ground;
 
 
     void Update()
@@ -25,24 +29,50 @@ public class Movement : MonoBehaviour
             obj.transform.eulerAngles.z - rollSpeed);
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
+    //private void OnCollisionEnter2D(Collision2D other)
+    //{
+
+    //    if (other.collider.CompareTag("Floor"))
+    //    {
+    //        Vector3 normal = other.GetContact(0).normal;
+    //        if (normal == Vector3.up)
+    //        {
+    //            touchingFloor = true;
+    //        }
+    //    }
+    //    else 
+    //    {
+    //        Debug.Log("In Air");
+    //        touchingFloor = false;
+    //    }
+    //}
+
+    public bool isGrounded()
     {
-        
-        if (other.collider.CompareTag("Floor"))
-        { 
-            touchingFloor = true;
+        if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDist, ground))
+        {
+            return true;
         }
-        else 
-        { 
-            touchingFloor = false;
-        }
+        else { return false; }
     }
 
-        private void FixedUpdate()
+    private void OnDrawGizmos()
     {
-        if (touchingFloor)
+        Gizmos.DrawWireCube(transform.position- transform.up * castDist, boxSize);
+    }
+
+
+    private void FixedUpdate()
+    {
+        if (isGrounded())
         {
             rb.AddForce(new Vector2(moveSpeed * hMove, 0) * Time.deltaTime);
+            //Debug.Log("Floor");
+        }
+        else
+        {
+            rb.AddForce(new Vector2((moveSpeed / PickaxeRoll) * hMove, 0) * Time.deltaTime);
+            //Debug.Log("Air");
         }
     }
 

@@ -7,15 +7,14 @@ public class pickaxe : MonoBehaviour
 {
     //This code was modified from orignally https://www.youtube.com/watch?v=-bkmPm_Besk&ab_channel=MoreBBlakeyyy
 
-    
-
-
     private Camera mainCamera;
     private Vector3 mousePos;
     public float smooth = 10.0f;
 
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
     }

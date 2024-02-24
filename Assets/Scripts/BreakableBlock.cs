@@ -8,10 +8,10 @@ using UnityEngine.Events;
 public class BreakableBlock : MonoBehaviour
 {
     [SerializeField]
-    private UnityEvent _hit;
+    private GameObject _object;
 
     [SerializeField]
-    private GameObject _object;
+    private GameObject self;
 
     public float strength = 2f;
     private void OnCollisionEnter2D(Collision2D other)
@@ -20,7 +20,8 @@ public class BreakableBlock : MonoBehaviour
         {
             if (strength <= 0f)
             {
-                _hit.Invoke();
+                Spawn();
+                Destroy(self);
             }
             else
             {

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3765951416327362918}
   - component: {fileID: 5450303507120972660}
   m_Layer: 3
-  m_Name: Breakable
+  m_Name: Placeable
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_Color: {r: 0.5018867, g: 0.5018867, b: 0.5018867, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -172,4 +172,4 @@ MonoBehaviour:
         m_CallState: 2
   _object: {fileID: 7853094290780926339, guid: 4d9f0ccd6e16c1e46aa7b1641caa4b16, type: 3}
   self: {fileID: 1645658776540108312}
-  strength: 2
+  strength: 5
