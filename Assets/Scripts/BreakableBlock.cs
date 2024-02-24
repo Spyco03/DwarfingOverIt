@@ -9,6 +9,7 @@ public class BreakableBlock : MonoBehaviour
 {
     [SerializeField]
     private UnityEvent _hit;
+
     [SerializeField]
     private GameObject _object;
 

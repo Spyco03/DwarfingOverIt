@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class pickaxe : MonoBehaviour
 {
-    //This code was found orignally @ https://www.youtube.com/watch?v=-bkmPm_Besk&ab_channel=MoreBBlakeyyy
+    //This code was modified from orignally https://www.youtube.com/watch?v=-bkmPm_Besk&ab_channel=MoreBBlakeyyy
+
+    
+
 
     private Camera mainCamera;
     private Vector3 mousePos;
-    public float smooth = 5.0f;
+    public float smooth = 10.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -29,6 +31,8 @@ public class pickaxe : MonoBehaviour
         Quaternion target = Quaternion.Euler(0, 0, rotZ);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-
     }
+
+    
+
 }
