@@ -12,7 +12,7 @@ public class BreakableBlock : MonoBehaviour
     [SerializeField]
     private GameObject _object;
 
-    public float strength = 3f;
+    public float strength = 2f;
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.CompareTag("Break Blocks"))
@@ -23,7 +23,7 @@ public class BreakableBlock : MonoBehaviour
             }
             else
             {
-                strength =- 1;
+                strength -= 1;
                 Spawn();
             }
             

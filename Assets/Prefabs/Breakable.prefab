@@ -171,4 +171,4 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _object: {fileID: 7853094290780926339, guid: 4d9f0ccd6e16c1e46aa7b1641caa4b16, type: 3}
-  strength: 3
+  strength: 2
