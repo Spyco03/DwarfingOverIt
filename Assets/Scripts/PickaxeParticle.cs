@@ -6,6 +6,12 @@ public class PickaxeParticle : MonoBehaviour
 {
     [SerializeField]
     private GameObject _object;
+    [SerializeField]
+    private GameObject particle1;
+    [SerializeField]
+    private GameObject particle2;
+    [SerializeField]
+    private GameObject rot;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -18,6 +24,17 @@ public class PickaxeParticle : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(_object, transform.position, Quaternion.identity);
+        if (rot.transform.eulerAngles.z <= 89 || rot.transform.eulerAngles.z >= 271) 
+        {
+            Instantiate(_object, particle1.transform.position, Quaternion.identity);
+            Debug.Log(rot.transform.eulerAngles.z);
+        }
+        else if (rot.transform.eulerAngles.z >= 91 && rot.transform.eulerAngles.z <= 269)
+        {
+            Instantiate(_object, particle2.transform.position, Quaternion.identity);
+            Debug.Log(rot.transform.eulerAngles.z);
+        }
+
+
     }
 }
