@@ -29,31 +29,13 @@ public class Movement : MonoBehaviour
             obj.transform.eulerAngles.z - rollSpeed);
     }
 
-    //private void OnCollisionEnter2D(Collision2D other)
-    //{
-
-    //    if (other.collider.CompareTag("Floor"))
-    //    {
-    //        Vector3 normal = other.GetContact(0).normal;
-    //        if (normal == Vector3.up)
-    //        {
-    //            touchingFloor = true;
-    //        }
-    //    }
-    //    else 
-    //    {
-    //        Debug.Log("In Air");
-    //        touchingFloor = false;
-    //    }
-    //}
-
     public bool isGrounded()
     {
         if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDist, ground))
         {
             return true;
         }
-        else { return false; }
+        else { return false; /*return true;*/ }
     }
 
     private void OnDrawGizmos()
@@ -71,7 +53,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            rb.AddForce(new Vector2((moveSpeed / PickaxeRoll) * hMove, 0) * Time.deltaTime);
+            rb.AddForce(new Vector2( moveSpeed * hMove, 0) / PickaxeRoll * Time.deltaTime );
             //Debug.Log("Air");
         }
     }

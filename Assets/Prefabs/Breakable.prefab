@@ -143,33 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7647a22d6c44b45a0dd7e4b17a1811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1645658776540108312}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5450303507120972660}
-        m_TargetAssemblyTypeName: BreakableBlock, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   _object: {fileID: 7853094290780926339, guid: 4d9f0ccd6e16c1e46aa7b1641caa4b16, type: 3}
   self: {fileID: 1645658776540108312}
-  strength: 2
+  invent: {fileID: 4358920228255593046, guid: 717facb77e89d0b4fb13214f6effff25, type: 3}
+  strength: 1
+  mats: 0

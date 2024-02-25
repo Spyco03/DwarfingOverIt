@@ -24,6 +24,11 @@ public class BlockPlacement : MonoBehaviour
     public bool visible = false;
     public bool buildmode = false;
 
+    valueSaver _valueSaver;
+    private void Awake()
+    {
+        _valueSaver = GameObject.Find("Reasorces").GetComponent<valueSaver>();
+    }
 
     void Update()
     {
@@ -33,24 +38,22 @@ public class BlockPlacement : MonoBehaviour
 
         transform.position = cursorPos;
 
-        if (Input.GetMouseButton(0) && buildmode)
+        if (Input.GetMouseButton(0) && buildmode && _valueSaver.materials >= 1)
         {
             RaycastHit2D rayHit = Physics2D.Raycast(cursorPos, Vector2.zero, Mathf.Infinity, layerMask);
 
             if (rayHit.collider == null)
             {
                 Instantiate(placedblock, transform.position, Quaternion.identity);
+                _valueSaver.materials--;
             }
-
+            
         }
 
         if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("E Pressed");
-            
+        {   
                 visible = !visible;
-                buildmode = !buildmode;
-            
+                buildmode = !buildmode;            
         }
 
         sprite.enabled = visible;

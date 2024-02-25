@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422308478302659264}
   - component: {fileID: 4648861296827065285}
+  - component: {fileID: -1530421446254222124}
   - component: {fileID: 575095153082345426}
   m_Layer: 5
   m_Name: Placement
@@ -45,6 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cda563f71b8534ea66f94e5724a1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disablepick:
+    m_PersistentCalls:
+      m_Calls: []
+  enablepick:
+    m_PersistentCalls:
+      m_Calls: []
   sprite: {fileID: 575095153082345426}
   placedblock: {fileID: 1645658776540108312, guid: ac2e1409a1f28204b89dc99c91b8627b, type: 3}
   layerMask:
@@ -52,6 +59,21 @@ MonoBehaviour:
     m_Bits: 72
   visible: 0
   buildmode: 0
+  script: {fileID: -1530421446254222124}
+--- !u!114 &-1530421446254222124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550204011949732895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6476fe96395194f458ac32999c367ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: 0
+  collectables: 0
 --- !u!212 &575095153082345426
 SpriteRenderer:
   m_ObjectHideFlags: 0
