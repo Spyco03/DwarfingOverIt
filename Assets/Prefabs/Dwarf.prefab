@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 3594467519259092357}
   - component: {fileID: 8367833163269511884}
   - component: {fileID: 3026381601421345461}
-  - component: {fileID: 8091150622571601919}
+  - component: {fileID: 5430023746792960929}
   m_Layer: 6
   m_Name: Dwarf
   m_TagString: Player
@@ -512,7 +512,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
---- !u!114 &8091150622571601919
+--- !u!114 &5430023746792960929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -6,6 +6,9 @@ public class squish : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Squish");
+        if (collision.CompareTag("Floor"))
+        {
+            Debug.Log("Squish");
+        }
     }
 }

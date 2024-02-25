@@ -12,7 +12,6 @@ public class Movement : MonoBehaviour
     private float hMove;
     public GameObject obj;
     public Rigidbody2D rb;
-    private bool touchingFloor;
     public Vector2 boxSize;
     public float castDist;
     public LayerMask ground;

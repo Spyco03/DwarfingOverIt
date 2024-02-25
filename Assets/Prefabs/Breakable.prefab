@@ -145,6 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _object: {fileID: 7853094290780926339, guid: 4d9f0ccd6e16c1e46aa7b1641caa4b16, type: 3}
   self: {fileID: 1645658776540108312}
-  invent: {fileID: 4358920228255593046, guid: 717facb77e89d0b4fb13214f6effff25, type: 3}
   strength: 1
   mats: 0

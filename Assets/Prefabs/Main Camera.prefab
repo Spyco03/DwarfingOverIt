@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1532595455761376288}
+  - component: {fileID: 8089257089550868048}
   - component: {fileID: 3089814903668455590}
   - component: {fileID: 8741858240323814190}
-  - component: {fileID: 8089257089550868048}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -34,6 +34,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8089257089550868048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6432228462144197609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b899303c5c716340a7ffccc587ac057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8312147632998944495, guid: 7c586b9d26687864bb05b530b38436ed, type: 3}
+  trackSpeed: 1
+  camOffset: {x: 0, y: 0, z: -6}
 --- !u!20 &3089814903668455590
 Camera:
   m_ObjectHideFlags: 0
@@ -93,18 +108,3 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6432228462144197609}
   m_Enabled: 1
---- !u!114 &8089257089550868048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6432228462144197609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b899303c5c716340a7ffccc587ac057, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  trackSpeed: 1
-  camOffset: {x: 0, y: 0, z: -6}
