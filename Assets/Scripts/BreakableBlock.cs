@@ -5,12 +5,17 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class BreakableBlock : MonoBehaviour
 {
     [SerializeField]
     private GameObject _object;
     [SerializeField]
     private GameObject self;
+
+    
+    public AudioClip breakSound;
 
     valueSaver _valueSaver;
 
@@ -27,6 +32,7 @@ public class BreakableBlock : MonoBehaviour
     {
         if (other.collider.CompareTag("Break Blocks"))
         {
+            
             if (strength <= 0f)
             {
                 if (mats)
@@ -34,13 +40,16 @@ public class BreakableBlock : MonoBehaviour
                     _valueSaver.materials++;
                 }
                 Spawn();
+                AudioSource.PlayClipAtPoint(breakSound, transform.position);
                 Destroy(self);
             }
             else
             {
+                
                 strength -= 1;
                 Spawn();
             }
+            
             
         }
     }

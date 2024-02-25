@@ -13,10 +13,16 @@ public class PickaxeParticle : MonoBehaviour
     [SerializeField]
     private GameObject rot;
 
+    public AudioSource speaker;
+    public AudioClip[] clips;
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.CompareTag("Floor"))
         {
+            AudioClip audioClip = clips[Random.Range(0, clips.Length - 1)];
+            speaker.clip = audioClip;
+            speaker.Play();
             Spawn();
         }
 
