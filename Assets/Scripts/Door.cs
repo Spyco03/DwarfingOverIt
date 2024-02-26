@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
 
     SpriteRenderer sprite;
     public bool doorActive;
+    public bool doorWork = true;
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class Door : MonoBehaviour
     {
         sprite.enabled = doorActive;
 
-        if (doorActive && Input.GetKeyDown(KeyCode.W))
+        if (doorActive && Input.GetKeyDown(KeyCode.W) && doorWork)
         {
             SceneManager.LoadScene(nextLevel);
         }
@@ -33,7 +34,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && doorWork)
         {
             doorActive = true;
             //Debug.Log("DoorActive");

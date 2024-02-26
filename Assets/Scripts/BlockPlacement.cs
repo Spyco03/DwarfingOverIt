@@ -20,7 +20,7 @@ public class BlockPlacement : MonoBehaviour
     private LayerMask layerMask;
 
     private Vector2 mousePos;
-    private Vector2 cursorPos;
+    private Vector3 cursorPos;
     public bool visible = false;
     public bool buildmode = false;
 
@@ -30,17 +30,30 @@ public class BlockPlacement : MonoBehaviour
         _valueSaver = GameObject.Find("Reasorces").GetComponent<valueSaver>();
     }
 
+    
+
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        cursorPos = new Vector2 (Mathf.Round(mousePos.x), Mathf.Round(mousePos.y));
+        cursorPos = new Vector3 (Mathf.Round(mousePos.x), Mathf.Round(mousePos.y), -1);
 
         transform.position = cursorPos;
 
+        RaycastHit2D rayHit = Physics2D.Raycast(cursorPos, Vector2.zero, Mathf.Infinity, layerMask);
+
+        if (rayHit.collider != null) 
+        {
+            sprite.color = new Color(255, 0, 0);
+        }
+        else
+        {
+            sprite.color = new Color(255, 255, 255);
+        }
+
         if (Input.GetMouseButton(0) && buildmode && _valueSaver.materials >= 1)
         {
-            RaycastHit2D rayHit = Physics2D.Raycast(cursorPos, Vector2.zero, Mathf.Infinity, layerMask);
+            
 
             if (rayHit.collider == null)
             {

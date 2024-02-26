@@ -15,7 +15,9 @@ public class Movement : MonoBehaviour
     public Vector2 boxSize;
     public float castDist;
     public LayerMask ground;
+    public AudioSource speaker;
 
+    
 
     void Update()
     {
@@ -34,7 +36,7 @@ public class Movement : MonoBehaviour
         {
             return true;
         }
-        else { return false; /*return true;*/ }
+        else { return false;}
     }
 
     private void OnDrawGizmos()
@@ -48,6 +50,7 @@ public class Movement : MonoBehaviour
         if (isGrounded())
         {
             rb.AddForce(new Vector2(moveSpeed * hMove, 0) * Time.deltaTime);
+            
             //Debug.Log("Floor");
         }
         else
@@ -55,6 +58,17 @@ public class Movement : MonoBehaviour
             rb.AddForce(new Vector2( moveSpeed * hMove, 0) / PickaxeRoll * Time.deltaTime );
             //Debug.Log("Air");
         }
+        
+        if (rollSpeed >= 1 || rollSpeed <= -1) 
+        {
+            speaker.UnPause();
+            Debug.Log("shmovin");
+        }
+        else
+        {
+            speaker.Pause();
+        }
+
     }
 
 }

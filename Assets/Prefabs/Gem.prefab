@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2826232761767981212}
   - component: {fileID: 2066189398549796419}
   - component: {fileID: 8230718228909238485}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.48678154, g: 0.03553574, b: 0.6075471, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 20ce9ee2a72d0e147a3bf1d9f408e03f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
