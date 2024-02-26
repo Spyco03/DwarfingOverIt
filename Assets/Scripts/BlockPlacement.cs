@@ -18,6 +18,8 @@ public class BlockPlacement : MonoBehaviour
     private GameObject placedblock;
     [SerializeField]
     private LayerMask layerMask;
+    [SerializeField]
+    private Canvas canvas;
 
     private Vector2 mousePos;
     private Vector3 cursorPos;
@@ -42,7 +44,7 @@ public class BlockPlacement : MonoBehaviour
 
         RaycastHit2D rayHit = Physics2D.Raycast(cursorPos, Vector2.zero, Mathf.Infinity, layerMask);
 
-        if (rayHit.collider != null) 
+        if (rayHit.collider != null || _valueSaver.materials <= 0) 
         {
             sprite.color = new Color(255, 0, 0);
         }
@@ -70,6 +72,8 @@ public class BlockPlacement : MonoBehaviour
         }
 
         sprite.enabled = visible;
+
+        canvas.gameObject.SetActive(visible);
 
         if (buildmode)
         {
