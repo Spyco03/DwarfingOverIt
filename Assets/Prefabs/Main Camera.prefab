@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8312147632998944495, guid: 7c586b9d26687864bb05b530b38436ed, type: 3}
   trackSpeed: 1
-  camOffset: {x: 0, y: 0, z: -6}
+  camOffset: {x: 0, y: 1.5, z: -6}
 --- !u!20 &3089814903668455590
 Camera:
   m_ObjectHideFlags: 0

@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
         if (rollSpeed >= 1 || rollSpeed <= -1) 
         {
             speaker.UnPause();
-            Debug.Log("shmovin");
+            //Debug.Log("shmovin");
         }
         else
         {

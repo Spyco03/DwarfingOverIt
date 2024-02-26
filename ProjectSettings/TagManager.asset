@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Break Blocks
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

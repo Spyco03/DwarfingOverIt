@@ -13,8 +13,13 @@ public class BreakableBlock : MonoBehaviour
     private GameObject _object;
     [SerializeField]
     private GameObject self;
+    [SerializeField]
+    private Sprite[] matSprite;
+    [SerializeField]
+    private Sprite[] baseSprite;
+    [SerializeField]
+    private SpriteRenderer _spriteRenderer;
 
-    
     public AudioClip breakSound;
 
     valueSaver _valueSaver;
@@ -25,6 +30,14 @@ public class BreakableBlock : MonoBehaviour
     private void Start()
     {
         _valueSaver = GameObject.Find("Reasorces").GetComponent<valueSaver>();
+        if (mats)
+        {
+            _spriteRenderer.sprite = matSprite[Random.Range(0, matSprite.Length -1)];
+        }
+        else
+        {
+            _spriteRenderer.sprite = baseSprite[Random.Range(0, baseSprite.Length - 1)];
+        }
     }
 
 

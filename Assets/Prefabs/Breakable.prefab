@@ -146,6 +146,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _object: {fileID: 7853094290780926339, guid: 4d9f0ccd6e16c1e46aa7b1641caa4b16, type: 3}
   self: {fileID: 1645658776540108312}
+  matSprite:
+  - {fileID: 685251284, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -1422809169, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -1274078077, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -1734153646, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 454540673, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -2060769792, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 1124763911, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 772601456, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -565596354, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -430342842, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 1925133665, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 222312586, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 1981321000, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 1585196942, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: -1186804761, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  - {fileID: 1066798947, guid: 7cd36d15361735c4fa720113a3f6551a, type: 3}
+  baseSprite:
+  - {fileID: -1179667812, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 1203395464, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 1987566281, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 1088688861, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 217999464, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: -1670096158, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 1409941750, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 123173321, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: -1700060776, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 410860702, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 852301230, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 1562935409, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 840236848, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: 767684105, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: -1274401298, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  - {fileID: -471867053, guid: be2d72b76de054f4480776c4f22cde53, type: 3}
+  _spriteRenderer: {fileID: 130078808779012683}
   breakSound: {fileID: 8300000, guid: 3f8e766ef1ce1474ca0eb59355ac19dd, type: 3}
   strength: 1
   mats: 0

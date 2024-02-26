@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 4673773364751522552}
   - component: {fileID: 374391204440973413}
   m_Layer: 6
-  m_Name: Circle
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddbb9206ee1aae94bb4c08d9f4302388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowUrRoll: 3
+  slowUrRoll: 2.5
   PickaxeRoll: 1.7
   moveSpeed: 400
   obj: {fileID: 3535160190612733513}
@@ -628,6 +628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a680745022ea951428ff8ac7d9539b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
+  player: {fileID: 5446038786888556553}
 --- !u!81 &861796706575551666
 AudioListener:
   m_ObjectHideFlags: 0

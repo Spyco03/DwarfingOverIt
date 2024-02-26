@@ -146,6 +146,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _object: {fileID: 7853094290780926339, guid: 4d9f0ccd6e16c1e46aa7b1641caa4b16, type: 3}
   self: {fileID: 1645658776540108312}
+  matSprite:
+  - {fileID: -1138212591, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 840743654, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 1632760783, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -1144686849, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -1655923184, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -559058141, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 1401540264, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -1834147170, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -691010292, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 206390079, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -1857882891, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 1741909782, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -504027969, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: -730314346, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 482947050, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  - {fileID: 1561820218, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  baseSprite:
+  - {fileID: -1138212591, guid: 4f302e2b2fc2def48af66f590bb23fc9, type: 3}
+  _spriteRenderer: {fileID: 130078808779012683}
   breakSound: {fileID: 8300000, guid: 3f8e766ef1ce1474ca0eb59355ac19dd, type: 3}
   strength: 3
   mats: 1
