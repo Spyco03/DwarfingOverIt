@@ -1456,6 +1456,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7156502536787423188, guid: 80ccf022dada14c428a7ab7b69ac091e, type: 3}
+      propertyPath: m_text
+      value: 'Placed Blocks are stronger but not unbreakable.
+
+        However breaking
+        them gives back the Materials use to place them.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156502536787423188, guid: 80ccf022dada14c428a7ab7b69ac091e, type: 3}
+      propertyPath: m_fontSize
+      value: 49.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8597950315779570337, guid: 80ccf022dada14c428a7ab7b69ac091e, type: 3}
       propertyPath: m_Name
       value: Sign (8)
